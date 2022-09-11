@@ -9,7 +9,7 @@ export async function sendRemote(queueId: string) {
   const queue = await getTask(queueId);
   await registerDoc(queueId, queue);
   await sendPrnFile(queueId);
-  await console.log(`[SEND REMOTE] ${queueId} registered.`);
+  await console.log(`[SEND_REMOTE] ${queueId} registered.`);
   await deleteTask(queueId);
 }
 
