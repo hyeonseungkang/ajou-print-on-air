@@ -64,9 +64,18 @@ shell_join() {
   done
 }
 
+chomp() {
+  printf "%s" "${1/"$'\n'"/}"
+}
+
 ohai() {
   printf "${tty_blue}==>${tty_bold} %s${tty_reset}\n" "$(shell_join "$@")"
 }
+
+ohai ""
+ohai "========== git 설치 확인 =========="
+ohai ""
+git
 
 ohai ""
 ohai "========== Homebrew 설치 =========="
@@ -82,11 +91,6 @@ ohai ""
 ohai "========== pm2 설치 =========="
 ohai ""
 npm install -g pm2
-
-ohai ""
-ohai "========== git 설치 확인 =========="
-ohai ""
-git
 
 ohai ""
 ohai "========== ajou-print-on-air 프로젝트 복제 =========="
