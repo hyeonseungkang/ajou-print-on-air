@@ -99,8 +99,9 @@ ohai ""
 ohai "========== ajou-print-on-air 전화번호 입력 =========="
 ohai ""
 touch env.yml
+echo ""
 echo -n "Phone number: " && read NICKNAME
-echo "nickname: '$NICKNAME'" > env.yml
+echo "nickname: '$NICKNAME'" >env.yml
 
 ohai ""
 ohai "** 스크립트 끝 **"
