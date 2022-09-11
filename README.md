@@ -2,13 +2,15 @@
 
 ## How to install
 
-### Easy Install
+### Install dependencies
+
+#### Easy Install
 
 ~~~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/khskeb0513/ajou-print-on-air/master/install.sh)"
 ~~~
 
-### Manual Install
+#### Manual Install
 
 ~~~
 # install git
@@ -25,7 +27,3 @@ npm install -g pm2
 
 # clone project
 git clone https://github.com/khskeb0513/ajou-print-on-air
-
-# start project
-cd ajou-print-on-air || exit
-pm2 start
