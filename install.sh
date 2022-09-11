@@ -64,44 +64,32 @@ ohai() {
   printf "${tty_blue}==>${tty_bold} %s${tty_reset}\n" "$(shell_join "$@")"
 }
 
-ohai ""
-ohai "========== git 설치 확인 =========="
-ohai ""
+cd ~/ || exit
+
+ohai "git 설치 확인"
 git
 
-ohai ""
-ohai "========== Homebrew 설치 =========="
-ohai ""
+ohai "Homebrew 설치"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-ohai ""
-ohai "========== node.js ghostscript 설치 =========="
-ohai ""
+ohai "node.js ghostscript 설치"
 brew install node ghostscript
 
-ohai ""
-ohai "========== pm2 설치 =========="
-ohai ""
+ohai "pm2 설치"
 npm install -g pm2
 
-ohai ""
-ohai "========== ajou-print-on-air 프로젝트 복제 =========="
-ohai ""
+ohai "ajou-print-on-air 프로젝트 복제"
 git clone https://github.com/khskeb0513/ajou-print-on-air
 
-ohai ""
-ohai "========== ajou-print-on-air 프로젝트 추가 =========="
-ohai ""
+ohai "ajou-print-on-air 전화번호 입력"
+ohai "01012345678 형식으로 입력해주세요. 꼭 11자리가 아니어도 됩니다."
 cd ajou-print-on-air || exit
-pm2 start && pm2 stop ajou-print-on-air
-
-ohai ""
-ohai "========== ajou-print-on-air 전화번호 입력 =========="
-ohai ""
 touch env.yml
 echo ""
-echo -n "Phone number: " && read NICKNAME
+echo -n "Phone number: " && read -r NICKNAME
 echo "nickname: '$NICKNAME'" >env.yml
 
-ohai ""
+ohai "ajou-print-on-air 프로젝트 실행"
+pm2 start
+
 ohai "** 스크립트 끝 **"
