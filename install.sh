@@ -94,6 +94,7 @@ ohai "========== ajou-print-on-air 프로젝트 실행 =========="
 ohai ""
 cd ajou-print-on-air || exit
 pm2 start
+pm2 stop ajou-print-on-air
 
 ohai ""
 ohai "** 스크립트 끝 **"
