@@ -160,6 +160,7 @@ pm2 save
 
 ## 버그 제보 및 개선점 제안
  
-[khskeb0513@gmail.com](mailto:khskeb0513@gmail.com)로 문의 주시면 확인하는 대로 회신 드리겠습니다.
+[khskeb0513@gmail.com](mailto:khskeb0513@gmail.com)로 문의 주시면 확인하는 대로 회신 드리겠습니다.<br>
+긴 글 읽어주셔서 감사합니다.
  
 개발자: 아주대학교 강현승
