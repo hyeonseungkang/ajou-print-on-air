@@ -154,6 +154,8 @@ pm2 save
 
 <table><tr><td><img src="images/ps-setting.gif" alt="PS 설정 과정"></td><td><img src="images/ufr-setting.gif" alt="UFR 설정 과정"></td></tr></table>
 
+** 설치과정의 끝 **
+
 <a id="contact-info" />
 
 ## 버그 제보 및 개선점 제안
