@@ -6,22 +6,23 @@
 
 ## How to install
 
-### Install Driver
+### Step 1. Install Driver
 
 [Canon Mac UFR II Driver](https://asia.canon/en/support/0101135101?model=3327C006)
 
-### Install dependencies and env file
+### Step 2. Install dependencies and env file
 
-#### Easy Install
+#### Method 1. Easy Install
 
 ~~~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/khskeb0513/ajou-print-on-air/master/install.sh)"
 ~~~
 
-#### Manual Install
+#### Method 2. Manual Install
 
-> You must install node.js and ghostscript.
-> Homebrew, pm2, git is optional.
+> You must install node.js and ghostscript.<br>
+> Homebrew, pm2, git is optional.<br>
+> Setting env file is essential.
 
 ~~~
 # install git
@@ -49,3 +50,7 @@ touch env.yml
 echo ""
 echo -n "Phone number: " && read NICKNAME
 echo "nickname: '$NICKNAME'" > env.yml
+~~~
+
+### Step 3. Add printers
+
