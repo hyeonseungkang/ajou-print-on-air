@@ -7,16 +7,15 @@ import axios from 'axios';
 
 export async function sendRemote(queueId: string) {
   const queue = await getTask(queueId);
-  await registerDoc(queueId, queue).then(
-    () => {
+  await registerDoc(queueId, queue)
+    .then(() => {
       console.log(`[SEND_REMOTE] ${queueId} registered.`);
       sendPrnFile(queueId);
-    },
-    (reason) => {
+    })
+    .catch((reason) => {
       console.error(reason.message);
       console.log(`[SEND_REMOTE] ${queueId} fail to register.`);
-    },
-  );
+    });
   await deleteTask(queueId);
 }
 
