@@ -4,30 +4,50 @@
 
 ## 목차
 
-- [프로젝트 설명](#프로젝트-설명)
-- [설치 단계](#설치-단계)
-  - [단계 1. 드라이버 설치](#단계-1.-드라이버-설치)
-  - [단계 2. 종속성 설치 및 env 파일 설정](#단계-2.-종속성-설치-및-env-파일-설정)
-    - [방법 1. 쉬운 설치](#방법-1.-쉬운-설치)
-    - [방법 2. 수동 설치](#방법-2.-수동-설치)
-  - [단계 3. 자동시작 설정](#단계-3.-자동시작-설정)
-  - [단계 4. 프린터 추가](#단계-4.-프린터-추가)
-    - [단계 4.1. Ajou Print-on-Air PS 설정 방법](#단계-4.1.-ajou-print-on-air-ps-설정-방법)
-    - [단계 4.2. Ajou Print-on-Air UFR 설정 방법](#단계-4.2.-ajou-print-on-air-ufr-설정-방법)
+- [프로젝트 설명](#intro)
+- [사용 방법](#how-to-use)
+- [설치 단계](#how-to-install)
+  - [단계 1. 드라이버 설치](#install-driver)
+  - [단계 2. 종속성 설치 및 env 파일 설정](#install-dependencies)
+    - [방법 1. 쉬운 설치](#easy-install)
+    - [방법 2. 수동 설치](#manual-install)
+  - [단계 3. 자동시작 설정](#set-auto-launch)
+  - [단계 4. 프린터 추가](#add-printer-setting)
+    - [단계 4.1. Ajou Print-on-Air PS 설정 방법](#ps-ipp-add)
+    - [단계 4.2. Ajou Print-on-Air UFR 설정 방법](#ufr-ipp-add)
+
+<a id="intro" />
 
 ## 프로젝트 설명
 
 `Ajou Print-on-Air`는 맥 환경에서 아주대학교 내 공용프린터를 사용할 수 있도록 합니다.
 
+<a id="how-to-use" />
+
+## 사용 방법
+
+프린터로 `Ajou Print-on-Air PS`를 선택하여 인쇄하면 됩니다.<br>
+프린터로 `Ajou Print-on-Air UFR` 선택 시 인쇄물이 무시됩니다.
+
+<img src="images/how-to-use.png" alt="사용 방법">
+
+<a id="how-to-install" />
+
 ## 설치 단계
+
+<a id="install-driver" />
 
 ### 단계 1. 드라이버 설치
 
-아래 맥용 캐논 UFR II 드라이버를 설치하세요. 
+아래 맥용 캐논 UFR II 드라이버를 설치하세요.
 
 [Canon UFR II Driver-Mac](https://asia.canon/en/support/0101135101?model=3327C006)
 
+<a id="install-dependencies" />
+
 ### 단계 2. 종속성 설치 및 env 파일 설정
+
+<a id="easy-install" />
 
 #### 방법 1. 쉬운 설치
 
@@ -39,6 +59,8 @@
 ~~~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/khskeb0513/ajou-print-on-air/master/install.sh)"
 ~~~
+
+<a id="manual-install" />
 
 #### 방법 2. 수동 설치
 
@@ -77,6 +99,8 @@ echo "nickname: '$NICKNAME'" > env.yml
 pm2 start
 ~~~
 
+<a id="set-auto-launch" />
+
 ### 단계 3. 자동시작 설정
 
 아래 명령어를 터미널 창에 붙여 넣고 실행하세요.
@@ -95,12 +119,16 @@ pm2 startup
 pm2 save
 ~~~
 
+<a id="add-printer-setting" />
+
 ### 단계 4. 프린터 추가
 
 `Ajou Print-on-Air PS`와 `Ajou Print-on-Air UFR` 모두 설정하여야 합니다.<br>
 둘 간의 설정 순서는 상관 없습니다.<br>
 최종적으로 아래의 사진과 같이 설정되어야 합니다.
 <table><tr><td><img src="images/ps-set-finished.png" alt="PS 설정 완료"></td><td><img src="images/ufr-set-finished.png" alt="UFR 설정 완료"></td></tr></table>
+
+<a id="ps-ipp-add" />
 
 #### 단계 4.1. Ajou Print-on-Air PS 설정 방법
 
@@ -109,6 +137,8 @@ pm2 save
 3. `프린터 정보 수집 중...`이라는 글자가 사라지면 `일반 PostScript 프린터`가 자동으로 선택됩니다. PS의 경우 이를 변경하지 말아야 합니다.
 4. (추가)버튼을 누른 후, `양면 프린트 장비`의 체크박스가 해제되어 있음을 확인힙니다.
 5. (확인)버튼을 눌러 설정을 마칩니다.
+
+<a id="ufr-ipp-add" />
 
 #### 단계 4.2. Ajou Print-on-Air UFR 설정 방법
 
@@ -120,10 +150,3 @@ pm2 save
 6. 사용 란에 `Canon iR-ADV 4525/4535 III`이 선택되었음을 확인하고 (추가)버튼을 눌러 설정을 마칩니다.
 
 <table><tr><td><img src="images/ps-setting.gif" alt="PS 설정 과정"></td><td><img src="images/ufr-setting.gif" alt="UFR 설정 과정"></td></tr></table>
-
-## 사용 방법
-
-프린터로 `Ajou Print-on-Air PS`를 선택하여 인쇄하면 됩니다.<br>
-프린터로 `Ajou Print-on-Air UFR` 선택 시 인쇄물이 무시됩니다.
-
-<img src="images/how-to-use.png" alt="사용 방법">
