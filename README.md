@@ -12,8 +12,8 @@
     - [방법 2. 수동 설치](#방법-2.-수동-설치)
   - [단계 3. 자동시작 설정](#단계-3.-자동시작-설정)
   - [단계 4. 프린터 추가](#단계-4.-프린터-추가)
-      - [단계 4.1. Ajou Print-on-Air PS 설정 방법](#단계-4.1.-ajou-print-on-air-ps-설정-방법)
-      - [단계 4.2. Ajou Print-on-Air UFR 설정 방법](#단계-4.2.-ajou-print-on-air-ufr-설정-방법)
+    - [단계 4.1. Ajou Print-on-Air PS 설정 방법](#단계-4.1.-ajou-print-on-air-ps-설정-방법)
+    - [단계 4.2. Ajou Print-on-Air UFR 설정 방법](#단계-4.2.-ajou-print-on-air-ufr-설정-방법)
 
 ## 프로젝트 설명
 
