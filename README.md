@@ -15,6 +15,7 @@
   - [단계 4. 프린터 추가](#add-printer-setting)
     - [단계 4.1. Ajou Print-on-Air PS 설정 방법](#ps-ipp-add)
     - [단계 4.2. Ajou Print-on-Air UFR 설정 방법](#ufr-ipp-add)
+- [버그 제보 및 개선점 제안](#contact-info)
 
 <a id="intro" />
 
@@ -150,6 +151,8 @@ pm2 save
 6. 사용 란에 `Canon iR-ADV 4525/4535 III`이 선택되었음을 확인하고 (추가)버튼을 눌러 설정을 마칩니다.
 
 <table><tr><td><img src="images/ps-setting.gif" alt="PS 설정 과정"></td><td><img src="images/ufr-setting.gif" alt="UFR 설정 과정"></td></tr></table>
+
+<a id="intro" />
 
 ## 버그 제보 및 개선점 제안
 
