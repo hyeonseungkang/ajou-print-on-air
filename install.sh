@@ -90,10 +90,10 @@ ohai ""
 git clone https://github.com/khskeb0513/ajou-print-on-air
 
 ohai ""
-ohai "========== ajou-print-on-air 프로젝트 실행 =========="
+ohai "========== ajou-print-on-air 프로젝트 추가 =========="
 ohai ""
 cd ajou-print-on-air || exit
-pm2 start
+pm2 start && pm2 stop ajou-print-on-air
 
 ohai ""
 ohai "** 스크립트 끝 **"
