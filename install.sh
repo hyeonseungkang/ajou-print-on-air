@@ -96,4 +96,11 @@ cd ajou-print-on-air || exit
 pm2 start && pm2 stop ajou-print-on-air
 
 ohai ""
+ohai "========== ajou-print-on-air 전화번호 추가 =========="
+ohai ""
+touch env.yml
+echo -n "Phone number: " && read NICKNAME
+echo "nickname: '$NICKNAME'" > env.yml
+
+ohai ""
 ohai "** 스크립트 끝 **"
