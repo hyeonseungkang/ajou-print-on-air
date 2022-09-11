@@ -150,3 +150,10 @@ pm2 save
 6. 사용 란에 `Canon iR-ADV 4525/4535 III`이 선택되었음을 확인하고 (추가)버튼을 눌러 설정을 마칩니다.
 
 <table><tr><td><img src="images/ps-setting.gif" alt="PS 설정 과정"></td><td><img src="images/ufr-setting.gif" alt="UFR 설정 과정"></td></tr></table>
+
+## 버그 제보 및 개선점 제안
+
+> 
+> [khskeb0513@gmail.com](mailto:khskeb0513@gmail.com)로 문의 주시면 확인하는 대로 회신 드리겠습니다.<br>
+> 
+> 개발자: 아주대학교 강현승
