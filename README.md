@@ -1,6 +1,6 @@
 # Ajou Print-on-Air
 
-<img src="images/printer.png" alt="프린터 사진">
+<div><img style="vertical-align: middle" src="images/ajou.png" alt="프린터 사진" width="150" height="140"><img style="vertical-align: middle" src="images/printer.png" alt="프린터 사진" width="120" height="110"></div>
 
 ## 목차
 
