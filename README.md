@@ -27,3 +27,9 @@ npm install -g pm2
 
 # clone project
 git clone https://github.com/khskeb0513/ajou-print-on-air
+
+# make env.yml file
+cd ajou-print-on-air
+touch env.yml
+echo -n "Phone number: " && read NICKNAME
+echo "nickname: '$NICKNAME'" > env.yml
