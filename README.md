@@ -84,7 +84,7 @@ pm2 start
 pm2 startup
 ~~~
 
-<img src="images/fetch-set-startup.png" alt="자동시작 설정 명령어 받기">
+<img src="images/fetch-set-startup-2.png" alt="자동시작 설정 명령어 받기">
 
 선택한 부분을 드래그하여 복사한 후 터미널 창에 다시 붙혀 넣어 실행하세요.
 비밀번호를 묻는 경우 유저 비밀번호를 입력하면 됩니다.
