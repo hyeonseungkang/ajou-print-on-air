@@ -52,6 +52,10 @@
 
 <a id="easy-install" />
 
+> 아래 방법들은 모두 Homebrew가 설치되어 있음을 전제로 합니다.<br>
+> 아래 링크를 통해 Homebrew를 설치하세요.<br>
+> [Homebrew 공식 홈페이지](https://brew.sh/index_ko)
+
 #### 방법 1. 쉬운 설치
 
 아래 명령어를 터미널에 붙여 넣고 실행하세요.<br>
@@ -74,9 +78,6 @@ env 파일 설정은 필수 단계입니다.
 ~~~
 # git 설치
 git
-
-# homebrew 설치
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # node and ghostscript 설치
 # Homebrew가 없다면 아래 종속성을 수동으로 설치할 수 있습니다.

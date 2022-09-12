@@ -69,9 +69,6 @@ cd ~/ || exit
 ohai "git 설치 확인"
 git
 
-ohai "Homebrew 설치"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 ohai "node.js ghostscript 설치"
 brew install node ghostscript
 
