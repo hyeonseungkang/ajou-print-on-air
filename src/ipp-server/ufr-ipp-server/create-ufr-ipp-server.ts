@@ -11,9 +11,7 @@ export function createUfrIppServer() {
   console.log('[URF_IPP] URF IPP server started.');
 
   printer.on('job', (job: any) => {
-    const queueId = (
-      (job.name as string).split(' - ')[1].split('/').pop() as string
-    ).split('.')[0];
+    const queueId = (job.name as string).split(' - ')[1].trim();
     const psFilename = join(
       process.env.PWD as string,
       'temp/',

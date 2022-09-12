@@ -4,7 +4,7 @@ import { readFileSync, createWriteStream } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 import { addTask } from '../../db/db';
-import { printFile } from '@grandchef/node-printer';
+import { printDirect } from '@grandchef/node-printer';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Printer = require('ipp-printer');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -39,9 +39,18 @@ function convertPsToPdf(queueId: string, docName: string) {
     console.log(`[PS2PDF] ${queueId}.pdf`);
     pdfPageCounter(readFileSync(pdfPath)).then(async (r: any) => {
       await addTask(queueId, r.numpages, docName);
-      await printFile({
+      printDirect({
+        data: Buffer.from(readFileSync(psPath).buffer),
         printer: CupsUFRPrinterName,
-        filename: pdfPath,
+        type: 'POSTSCRIPT',
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        docname: queueId,
+        options: {
+          CNDuplex: 'None',
+        },
+        error: (err) => console.error(err),
+        success: () => null,
       });
     });
   });
