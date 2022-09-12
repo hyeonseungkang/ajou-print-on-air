@@ -76,7 +76,7 @@ ohai "pm2 설치"
 npm install -g pm2
 
 ohai "ajou-print-on-air 프로젝트 복제"
-rm -rf ~/ajou-print-on-air/
+rm -rf ~/ajou-print-on-air
 git clone https://github.com/khskeb0513/ajou-print-on-air
 
 ohai "ajou-print-on-air 전화번호 입력"
