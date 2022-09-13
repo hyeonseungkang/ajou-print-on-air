@@ -163,7 +163,11 @@ pm2 save
  
 [khskeb0513@gmail.com](mailto:khskeb0513@gmail.com)로 문의 주시면 확인하는 대로 회신 드리겠습니다.<br>
 긴 글 읽어주셔서 감사합니다.
- 
+
 개발자: 아주대학교 강현승
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkhskeb0513%2Fajou-print-on-air&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+## License
+
+[MIT](LICENSE)
