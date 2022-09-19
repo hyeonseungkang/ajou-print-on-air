@@ -13,6 +13,7 @@ const pdfPageCounter = require('pdf-page-counter');
 export function createPsIppServer() {
   const PsIppServer = new Printer(PSPrinterName);
   console.log('[PS_IPP] PS IPP server started.');
+  console.log(PSPrinterName, PsIppServer.server.address());
 
   PsIppServer.on('job', (job: any) => {
     const queueId = uuidV4();

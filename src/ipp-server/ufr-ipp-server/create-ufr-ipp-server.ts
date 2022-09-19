@@ -7,10 +7,11 @@ import { deleteTask } from '../../db/db';
 const Printer = require('ipp-printer');
 
 export function createUfrIppServer() {
-  const printer = new Printer(UFRPrinterName);
+  const UFRIPPServer = new Printer(UFRPrinterName);
   console.log('[URF_IPP] URF IPP server started.');
+  console.log(UFRPrinterName, UFRIPPServer.server.address());
 
-  printer.on('job', (job: any) => {
+  UFRIPPServer.on('job', (job: any) => {
     const queueId = (job.name as string).split(' - ')[1].trim();
     const psFilename = join(
       process.env.PWD as string,
